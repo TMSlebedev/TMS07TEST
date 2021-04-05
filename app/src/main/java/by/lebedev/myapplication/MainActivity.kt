@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,6 +21,8 @@ class MainActivity : AppCompatActivity() {
             val newText = inputField.text.toString()
             infoText.text = newText
             inputField.text.clear()
+
+            Toast.makeText(this, "Done", Toast.LENGTH_SHORT).show()
         }
     }
 }
